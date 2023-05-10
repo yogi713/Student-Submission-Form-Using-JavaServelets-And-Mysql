@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="main-div">
+		<div class="div-1">
+			<h1>User Login</h1>
+		</div>
+		<div class="div-2">
+			<form action="LoginServlet" method="post">
+				<table class="table">
+					<tr>
+						<td>Enter Your Name </td>	
+						<td><input type="text" name="name" id=""></td>
+					</tr>
+					<tr>
+						<td>Enter Your Password </td>	
+						<td><input type="password" name="password"></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input type="email" name="email" id="email"></td>
+					</tr>
+					<tr>
+						<td>Sms Alert</td>
+						<td><input type="checkbox" name="sms" id="sms"></td>
+					</tr>
+					<tr>
+						<td>Birth Date</td>
+						<td><input type="date" name="date" id="date"></td>
+					</tr>
+					<tr>
+						<td>Gender</td>
+						<td>
+							<select name="gender" id="gender">
+								<option value="male">Male</option>
+								<option value="female">Female</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>State</td>
+						<td>
+							<fieldset>
+								<legend>Your State</legend>
+								<label for="tamilnadu">Tamil Nadu</label>
+								<input type="radio" name="state" id="tamilnadu" value="tamilnadu">
+								<label for="kerala">Kerala</label>
+								<input type="radio" name="state" id="kerala" value="kerala">
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<td>Any Queries</td>
+						<td> <textarea name="queries" rows="5" cols="25"></textarea></td>
+					</tr>
+					<tr>
+						<td><input type="reset"></td>
+						<td><input type="submit" value="Submit"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
