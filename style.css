@@ -1,0 +1,24 @@
+body{
+  background-image:url(images/dark-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:100% 100%;
+  font-family:Roboto , Arial;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.main-div{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width:500px;
+  color:rgb(143, 196, 221);
+  opacity: 0.3;
+  transition: opacity 500ms;
+}
+.main-div:hover{
+  opacity: 1;
+}
